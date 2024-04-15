@@ -3,6 +3,9 @@ const currency: any = {
   USD: 1,
   EUR: 0.93,
   GBP: 0.76,
+  KWD:0.308,
+  SAR:3.749,
+  AFN:71.252,
   INR: 74.57,
   PKR: 280,
 };
@@ -11,13 +14,13 @@ let user_answer = await inquirer.prompt([
     name: "from",
     message: "Enter from currency ",
     type: "list",
-    choices: ["USD", "EUR", "GBP", "INR", "PKR"],
+    choices: ["USD", "EUR", "GBP","KWD","SAR","AFN", "INR", "PKR",],
   },
   {
     name: "to",
     message: "Enter to currency",
     type: "list",
-    choices: ["USD", "EUR", "GBP", "INR", "PKR"],
+    choices: ["USD", "EUR", "GBP","KWD","SAR","AFN", "INR", "PKR",],
   },
   {
     name: "amount",
